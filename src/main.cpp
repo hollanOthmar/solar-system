@@ -179,6 +179,7 @@ bool initGL()
         return false;
     }
 
+    //NOTE! For OSX, framebuffer size should be set twice as much as window size!
     glViewport(0,0,SCR_WIDTH*2,SCR_HEIGHT*2);
     //configure global opengl state
     glEnable(GL_DEPTH_TEST);
